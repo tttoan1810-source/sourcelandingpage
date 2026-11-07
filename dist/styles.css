@@ -228,3 +228,13 @@ dialog.thank-you-dialog{width:min(420px,calc(100% - 28px));padding:24px}.thank-y
 @media(max-width:600px){#inquiry>label:has(input[type="date"]){grid-column:1/-1;min-width:0}#inquiry input[type="date"]{display:block;max-width:100%;min-width:0}}
 #inquiry .consent input[type="checkbox"]{-webkit-appearance:none;appearance:none;background:transparent;border:1px solid #aab6b3;border-radius:3px;padding:0;display:grid;place-content:center}
 #inquiry .consent input[type="checkbox"]:checked::before{content:"";width:8px;height:5px;border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg) translateY(-1px)}
+
+/* Mobile Safari date controls must fit the form and align their text. */
+@media(max-width:760px){
+  #inquiry{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  #inquiry>label:has(input[type="date"]){grid-column:1/-1;width:100%;min-width:0}
+  #inquiry input[type="date"]{-webkit-appearance:none;appearance:none;display:block;width:100%;max-width:100%;min-width:0;height:40px;padding:0 12px;text-align:left}
+  #inquiry input[type="date"]::-webkit-date-and-time-value{min-height:1em;text-align:left}
+  #inquiry input[type="date"]::-webkit-datetime-edit{text-align:left;padding:0}
+  body:has(input:focus,textarea:focus,select:focus) .mobile-cta{display:none}
+}
