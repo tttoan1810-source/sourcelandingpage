@@ -223,3 +223,8 @@ dialog.thank-you-dialog{width:min(420px,calc(100% - 28px));padding:24px}.thank-y
 .welcome-actions [data-welcome-book]{font-weight:600}
 
 .mobile-cta>.btn{background:var(--gold);border-color:var(--gold);color:var(--navy)}.mobile-cta>.btn:hover{background:#d5b985;border-color:#d5b985;color:var(--navy)}
+
+/* Keep native date fields readable on narrow mobile screens. */
+@media(max-width:600px){#inquiry>label:has(input[type="date"]){grid-column:1/-1;min-width:0}#inquiry input[type="date"]{display:block;max-width:100%;min-width:0}}
+#inquiry .consent input[type="checkbox"]{-webkit-appearance:none;appearance:none;background:transparent;border:1px solid #aab6b3;border-radius:3px;padding:0;display:grid;place-content:center}
+#inquiry .consent input[type="checkbox"]:checked::before{content:"";width:8px;height:5px;border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg) translateY(-1px)}
