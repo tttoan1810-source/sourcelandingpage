@@ -1,0 +1,23 @@
+.chihome-elementor-page .elementor{--e-global-color-primary:#18272d;--e-global-color-secondary:#c9ab77;--e-global-color-text:#666c6b;--e-global-color-accent:#c9ab77;--e-global-typography-primary-font-family:"Playfair Display";--e-global-typography-text-font-family:"Be Vietnam Pro";background:#f7f5f0}.chihome-elementor-page .elementor-widget-text-editor p{margin-bottom:0;color:inherit}.chihome-elementor-page .elementor-widget-button a{border-radius:0}.chihome-elementor-page .chi-booking-widget{padding:0;background:transparent}.chihome-elementor-page .chi-booking-widget form{width:100%;margin:0}.chihome-elementor-page .chi-booking-widget label{margin:0}.chihome-elementor-page .chi-booking-widget .honeypot{position:absolute;left:-9999px}.chihome-elementor-page .chi-hero .elementor-heading-title{white-space:pre-line}.chihome-elementor-page .chi-hero p{color:inherit}.chihome-elementor-page .chi-card .elementor-widget-image a{display:block}.chihome-elementor-page .chi-card .elementor-widget-image img{width:100%}.chihome-elementor-page .chi-mobilebar{position:fixed;bottom:0;left:0;right:0;z-index:50}.chihome-elementor-page .chi-nav .elementor-button{padding:8px 10px}.chihome-elementor-page .chi-about p{margin-bottom:15px}.chihome-elementor-page .chi-brand .elementor-heading-title{font-family:"Be Vietnam Pro",sans-serif}.chihome-elementor-page .chi-booking-widget .form-status:empty{display:none}@media(max-width:767px){.chihome-elementor-page{padding-bottom:72px}.chihome-elementor-page .chi-nav{flex-wrap:wrap}.chihome-elementor-page .chi-booking-widget form{grid-template-columns:1fr}.chihome-elementor-page .chi-booking-widget .full{grid-column:auto}.chihome-elementor-page .chi-booking-widget .inquiry-submit{width:100%;min-width:0}}
+
+/* Native Elementor button + native navigation container, collapsed on mobile. */
+.chihome-elementor-page .chi-mobile-toggle{display:none}
+@media(max-width:767px){
+ .chihome-elementor-page .chi-site-header{position:relative;z-index:30;padding:16px 22px}
+ .chihome-elementor-page .chi-site-header>.e-con-inner{flex-direction:row;flex-wrap:wrap;align-items:center;gap:0;justify-content:space-between}
+ .chihome-elementor-page .chi-site-header>.e-con-inner>.chi-brand{width:calc(100% - 60px);flex:none;gap:4px;padding:0}
+ .chihome-elementor-page .chi-site-header .chi-brand .elementor-heading-title{font-size:24px}
+ .chihome-elementor-page .chi-site-header .chi-brand .elementor-widget-text-editor{font-size:7px}
+ .chihome-elementor-page .chi-mobile-toggle{display:block;width:44px;flex:none;margin:0}
+ .chihome-elementor-page .chi-mobile-toggle .elementor-button{display:flex;width:44px;height:44px;align-items:center;justify-content:center;padding:0;font-size:26px;line-height:1;background:transparent;color:var(--navy);border:1px solid #dcdcd4}
+ .chihome-elementor-page .chi-mobile-toggle .elementor-button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+ .chihome-elementor-page .chi-site-header .chi-nav{width:100%;flex:none;order:3;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:18px 0 2px;margin:12px 0 0;border-top:1px solid #dcdcd4}
+ .chihome-elementor-page .chi-site-header.chi-mobile-ready:not(.chi-menu-open) .chi-nav{display:none}
+ .chihome-elementor-page .chi-site-header .chi-nav>.elementor-widget{width:100%;margin:0}
+ .chihome-elementor-page .chi-site-header .chi-nav>.elementor-widget:nth-child(-n+5){grid-column:1/-1}
+ .chihome-elementor-page .chi-site-header .chi-nav .elementor-button{display:flex;justify-content:flex-start;min-height:44px;padding:12px 16px;font-size:14px}
+ .chihome-elementor-page .chi-site-header .chi-nav>.elementor-widget:nth-last-child(-n+2) .elementor-button{justify-content:center;background:#eee9df}
+ .chihome-elementor-page .chi-site-header.chi-menu-open .chi-nav{animation:chi-menu-in .18s ease-out}
+}
+@keyframes chi-menu-in{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.chihome-elementor-page .chi-site-header.chi-menu-open .chi-nav{animation:none}}
