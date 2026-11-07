@@ -262,3 +262,13 @@ dialog.thank-you-dialog{width:min(420px,calc(100% - 28px));padding:24px}.thank-y
   .welcome-actions .btn{flex:1 1 100%}
   .unit-card-actions{flex-wrap:wrap}
 }
+
+/* Consistent date display while keeping the native, accessible date picker. */
+#inquiry .date-control{position:relative;display:flex;align-items:center;width:100%;height:44px;min-width:0;padding:0 12px;border:1px solid #798986;background:#ffffff05;color:var(--ivory)}
+#inquiry .date-display{display:block;flex:1;min-width:0;margin:0;color:inherit;font-size:16px;line-height:1.25;letter-spacing:normal;text-transform:none;text-align:left}
+#inquiry .date-display.is-empty{color:#a9b3b0}
+#inquiry .date-icon{display:block;flex:none;width:16px;height:15px;margin:0 2px 0 8px;border:1.5px solid #d1d8d4;border-radius:2px;position:relative}
+#inquiry .date-icon::before{content:'';position:absolute;left:-1.5px;right:-1.5px;top:3px;border-top:1.5px solid #d1d8d4}
+#inquiry .date-control input[type="date"]{position:absolute;inset:0;width:100%;height:100%;min-height:0;max-width:none;margin:0;opacity:.001;cursor:pointer}
+#inquiry .date-control:focus-within{outline:2px solid var(--gold);outline-offset:2px}
+#inquiry .date-control:has([aria-invalid="true"]){border-color:var(--gold)}
