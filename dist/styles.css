@@ -238,3 +238,27 @@ dialog.thank-you-dialog{width:min(420px,calc(100% - 28px));padding:24px}.thank-y
   #inquiry input[type="date"]::-webkit-datetime-edit{text-align:left;padding:0}
   body:has(input:focus,textarea:focus,select:focus) .mobile-cta{display:none}
 }
+
+/* Mobile usability across narrow screens and touch input. */
+@media(max-width:760px){
+  html{scroll-padding-top:84px}
+  .booking-grid,.location-grid,.apartment-grid,.unit-grid{min-width:0;grid-template-columns:minmax(0,1fr)}
+  .booking-grid>*,.location-grid>*,.card,.unit-card{min-width:0}
+  #inquiry input:not([type="checkbox"]),#inquiry select,#inquiry textarea{font-size:16px;max-width:100%}
+  #inquiry input:not([type="checkbox"]),#inquiry select{min-height:44px;height:44px}
+  #inquiry .apartment-field select{font-size:16px;min-height:48px}
+  .collection-select-wrap select{font-size:16px}
+  .menu-toggle,.language button{min-width:44px;min-height:44px}
+  header .wrap{gap:4px}
+  .footer-contact a,.booking-hotline>a{overflow-wrap:anywhere}
+  dialog{max-width:calc(100% - 28px);max-height:calc(100dvh - 28px);overflow:auto}
+}
+@media(max-width:380px){
+  header .logo img{width:125px}
+  .hero h1{font-size:clamp(35px,11vw,43px);letter-spacing:-.8px}
+  .hero-actions{flex-wrap:wrap}
+  .booking-copy h2,.section-head h2{font-size:32px}
+  .welcome-actions{flex-wrap:wrap}
+  .welcome-actions .btn{flex:1 1 100%}
+  .unit-card-actions{flex-wrap:wrap}
+}
